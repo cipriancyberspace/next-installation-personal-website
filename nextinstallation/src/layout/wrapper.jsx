@@ -1,23 +1,13 @@
-"use client"
-
-import ScrollToTop from "@/hooks/scroll-to-top";
-import { animationCreate } from "@/utils/utils";
+"use client";
 import { useEffect } from "react";
 
-const Wrapper = ({ children }) => {
+export default function Wrapper({ children }) {
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.WOW) {
+      new window.WOW({ live: false }).init();
+      console.log("✅ WOW.js initialized");
+    }
+  }, []);
 
-    useEffect(() => {
-        setTimeout(() => {
-            animationCreate()
-        }, 500);
-    }, [])
-
-    return (
-        <>
-            {children}
-            <ScrollToTop />
-        </>
-    );
+  return <>{children}</>;
 }
-
-export default Wrapper

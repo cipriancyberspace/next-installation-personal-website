@@ -18,9 +18,22 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <head>
-                <title>Cycure - Cyber Security React Next js Template</title>
-                <link rel="icon" href="/favicon.png" type="image/png" />
-            </head>
+  <title>Cycure - Cyber Security React Next js Template</title>
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  {/* Animate.css */}
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  {/* WOW.js */}
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    defer
+  ></script>
+</head>
+
             <body suppressHydrationWarning={true} className={`${inter.variable} ${cuprum.variable}`}>
                 <Wrapper>
                     {children}

@@ -1,14 +1,14 @@
-import Banner from "./banner"
-import Brand from "@/common/brand"
-import Service from "./services"
-import StepsArea from "@/common/steps-area"
-import VideoArea from "./video-area"
-import About from "@/components/homes/home/about"
-import Team from "@/common/team"
-import Marquee from "@/common/marquee"
-import Blog from "@/common/blog"
-import PriceArea from "@/common/price-area"
-import Header from "@/layout/headers/header"
+import Banner from './banner'
+import Brand from '@/common/brand'
+import About from './about'
+import Marquee from '@/common/marquee'
+import Testimonial from '@/common/testimonial'
+import Blog from '@/common/blog'
+import Services from '@/common/services'
+import HelpArea from '@/common/help-area'
+import Team from '@/common/team'
+import Header from '@/layout/headers/header'
+import FAQ from '@/common/faq'
 
 const Home = () => {
   return (
@@ -16,15 +16,15 @@ const Home = () => {
       <Header />
       <main className="main-area fix">
         <Banner />
-        <Service />
+        <Brand style_3={true} />
+        <Services style={true} />
         <About />
-        <Marquee style={true} />
-        <StepsArea />
         <Team />
-        <VideoArea />
-        <PriceArea style={true} />
-        <Brand style_2={true} />
-        <Blog />
+        <HelpArea style_3={true} />
+        <Marquee />
+        <Testimonial />
+        <Blog style_2={true} />
+        <FAQ style_3={true} />
       </main>
     </>
   )
